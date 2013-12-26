@@ -1,0 +1,1 @@
+<?php class VideoPostType extends SktPostType { } ?>

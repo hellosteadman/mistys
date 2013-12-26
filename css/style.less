@@ -1,0 +1,254 @@
+/*
+Theme Name: Misty's Big Adventure
+Author: Steadman
+Author URI: http://steadman.io/
+Version: 1.0
+*/
+
+@import "inc/reset.less";
+@import "inc/owl.carousel.less";
+
+body {
+	margin: 0; padding: 0; color: #ddd;
+	font-family: 'Oxygen', Helvetica, Arial, sans-serif; font-size: 100%;
+	background: #000 url('images/background.mobile.png') no-repeat;
+	
+	html.backgroundsize & { background-size: 100%; }
+	html.no-video & {
+		background: url('images/background.png');
+	}
+}
+
+.container { padding: 10px; }
+.half, .third, .one-half, .two-thirds { margin-bottom: 1em; }
+iframe, object, embed, img { max-width: 100%; }
+
+#nav-wrapper {
+	overflow: hidden;
+	
+	html.rgba & {
+		background: rgba(0, 0, 0, 0.5);
+	}
+	
+	nav {
+		padding: 0;
+		
+		.menu-toggle {
+			position: absolute; top: 0; right: 0; z-index: 9999;
+			background: #000 url('images/meatstack.png') no-repeat center;
+			width: 16px; height: 16px;
+			display: block; padding: 10px;
+		}
+		
+		ul, ol {
+			display: block; margin: 0; padding: 0.5em 0 0 0; list-style-type: none;
+			height: auto; transition: all 0.5s;
+			
+			li { margin-left: 0.5em; }
+			
+			a {
+				color: #fff; opacity: 0.5; padding-left: 0.25em; padding-right: 0.25em;
+				text-decoration: none; transition: opacity 0.5s;
+				&:hover { opacity: 1; }
+			}
+			
+			.current-menu-item a, .current_page_item a {
+				opacity: 1;
+			}
+			
+			&.menu-closed { height: 0; padding-top: 0; }
+		}
+	}
+}
+
+h1 {
+	color: #fff; letter-spacing: -0.02em; text-transform: uppercase;
+	font-family: 'Alegreya', serif; font-weight: bold; margin: 0;
+	line-height: 150%;
+	
+	html.textshadow & {
+		text-shadow: rgba(0, 0, 0, 0.25) 0 5px 12px
+	}
+}
+
+p { margin: 0 0 0.5em 0; font-size: 0.85em; line-height: 150%; }
+
+#welcome {
+	h1 {
+		line-height: 1em; font-size: 1.5em;
+		span { display: inline; margin-right: 0.1em; }
+	}
+	
+	p {
+		font-size: 1em; color: #fff; line-height: 125%;
+		html.textshadow & {
+			text-shadow: rgba(0, 0, 0, 0.25) 0 5px 12px;
+		}
+	
+		font-family: 'Alegreya', serif;
+	}
+}
+
+#skyline { display: none;  }
+#intro { display: none; }
+#news { clear: both; color: #fff; }
+.news {
+	color: #fff; margin: 0; padding: 0; list-style-type: none;
+	li {
+		margin: 0 0 1em 0; line-height: 150%;
+		a {
+			color: #fff; text-decoration: none;
+			&:hover { text-decoration: underline; }
+		}
+
+		small { font-size: 100%; color: #666; }
+	}
+}
+
+.gigs {
+	color: #fff; margin: 0; padding: 0; list-style-type: none;
+	li {
+		margin-bottom: 1em; line-height: 150%;
+		.btn { float: right; font-size: 0.75em; text-transform: uppercase; padding: 0 5px; margin-top: 0.25em; }
+	}
+}
+
+aside { display: block; }
+hr.separator { margin: 1em 0; border-width: 0; clear: both; }
+
+label { font-family: sans-serif; }
+#mailer input { clear: both; border-width: 0; padding: 5px; display: block; }
+
+#releases {
+	.release {
+		margin: 10px; float: left;
+		width: 300px; height: 300px; display: block;
+		&.all {
+			background: url('images/releases.png'); display: none;
+		}
+	}
+}
+
+a.thumbnail { border: 1px solid #666; display: block; transition: border-color 0.5s; }
+a.thumbnail:hover { border: 1px solid #999; }
+
+.post-title {
+	font-family: 'Alegreya', serif; font-weight: normal; font-size: 1.5em;
+	margin: 0; text-transform: none;
+	
+	h1& { font-weight: bold; font-size: 2em; }
+	
+	a { color: #fff; text-decoration: none; }
+	small {
+		color: rgba(255, 255, 255, 0.75) !important; color: #fff;
+		font-family: 'Oxygen', Helvetica, Arial, sans-serif; font-size: 0.5em;
+		display: block; clear: left; line-height: 155%; margin-bottom: 1em;
+	}
+}
+
+.type-release header .btn { display: none; }
+
+.error404 {
+	h1, p { text-align: center; }
+}
+
+.tracklist {
+	li {
+		position: relative;
+		a.audio-preview {
+			width: 16px; height: 16px; display: block; float: right; padding: 10px;
+			background: #000 url('images/play.png') no-repeat center;
+			position: absolute; right: 0;
+			
+			&:hover, &.playing {
+				background-color: #00BFFF;
+			}
+			
+			&.playing {
+				background-image: url('images/pause.png');
+				background-position: 10px 10px; color: #fff; text-decoration: none;
+				padding-left: 32px;
+
+				&:hover {
+					background-color: #000;
+				}
+			}
+		}
+	}
+}
+
+.btn {
+	background-color: #000; padding: 5px 10px; color: #fff; text-decoration: none;
+	font-family: 'Oxygen', Helvetica, Arial, sans-serif;
+	&:hover { background-color: #00BFFF; }
+}
+
+.tabs {
+	display: inline-block; margin-right: 28px;
+	li { display: inline-block; }
+	
+	.active .btn {
+		background-color: #00BFFF;
+		&:hover { color: #000; }
+	}
+}
+
+.type-page, .single .post, .single .type-gallery, .single .type-release, .single .type-video {
+	header {
+		h1 { font-size: 1.5em; line-height: 100%; margin-right: 36px; }
+	}
+}
+
+.tab { display: none; margin-top: 10px; }
+.tab.active { display: block; }
+
+.single .type-release ol.tracklist {
+	li {
+		background: rgba(0, 0, 0, 0.5); margin-top: 1px;
+		width: 100%; float: left; clear: both;
+		
+		.number {
+			display: block; float: left; padding: 10px 0 10px 20px;
+			width: 15px; opacity: 0.5; text-align: right;
+		}
+		
+		.title {
+			display: block; padding: 10px 20px; float: left;
+			small { font-size: 70%; display: block; line-height: 100%; }
+		}
+	}
+}
+
+header.tab-container {
+	position: relative;
+	
+	h1 { margin-bottom: 0; line-height: 100%; padding: 0; }
+	.tabs {
+		float: right; position: absolute; bottom: 0.5em; right: 0;
+		bottom: 0;
+	}
+}
+
+footer {
+	clear: both; font-size: 0.75em; color: #666; padding-bottom: 1em;
+	a {
+		color: #888; text-decoration: none;
+		&:hover { text-decoration: underline; }
+	}
+	
+	.menu {
+		display: inline;
+		ul {
+			display: inline;
+			li {
+				display: inline; margin-left: 0.5em;
+				a:before { content: "|"; padding-right: 0.5em; }
+			}
+		}
+	}
+}
+
+.exclude-mobile, .exclude-tablet, .exclude-desktop { display: none; }
+@media (max-width: 639px) { @import "sizes/mobile.less"; }
+@media (min-width: 640px) { @import "sizes/tablet.less"; }
+@media (min-width: 1024px) { @import "sizes/desktop.less"; }

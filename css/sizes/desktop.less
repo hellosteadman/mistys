@@ -1,0 +1,46 @@
+.tablet-only { display: none; }
+
+html.opacity {
+	body.home {
+		#releases .carousel-container {
+			opacity: 0.5; transition: opacity 1s;
+			&:hover { opacity: 1; }
+		}
+		
+		#main-wrapper main {
+			opacity: 0.75; transition: opacity 0.5s;
+			&:hover { opacity: 1; }
+		}
+	}
+	
+	#main-wrapper aside {
+		opacity: 0.75; transition: opacity 0.5s;
+		&:hover { opacity: 1; }
+	}
+}
+
+h1 { font-size: 2.28em; }
+
+.type-release, .type-gig {
+	header {
+		&.has-thumbnail {
+			img.thumbnail { width: 96px; margin-right: 20px; }
+			h2 { width: 488px; }
+		}
+	}
+}
+
+#welcome {
+	h1 {
+		font-size: 4.57em; margin: 25px 0 0.25em 0; line-height: 0.75em;
+		span { display: block; clear: both; margin-right: 0; }
+	}
+}
+
+#skyline {
+	width: 100%; height: 1400px; background: url('images/skyline.png') right 0 repeat-x;
+	position: absolute; top: 375px; z-index: 20; right: 0; display: inherit;
+	html.backgroundsize & { background-size: cover; }
+}
+
+.news { font-size: 1.28em; }
