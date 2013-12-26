@@ -25,14 +25,7 @@
 			</div>
 		</header>
 		
-		<?php global $post;
-		if($post->post_content) { ?>
-			<main>
-				<?php the_content(); ?>
-			</main>
-		<?php }
-		
-		if($tracklist = skt_get_field('tracklist')) { ?>
+		<?php if($tracklist = skt_get_field('tracklist')) { ?>
 			<ol class="tracklist">
 				<?php foreach($tracklist as $i => $track) { ?>
 					<li>
@@ -49,6 +42,13 @@
 					</li>
 				<?php } ?>
 			</ol>
+		<?php }
+		
+		global $post;
+		if($post->post_content) { ?>
+			<main>
+				<?php the_content(); ?>
+			</main>
 		<?php } ?>
 	</article>
 <?php }
