@@ -1261,6 +1261,7 @@ footer .menu ul li a:before {
     position: absolute;
     bottom: 0.5em;
     right: 0;
+    margin-right: 0;
   }
   .tab {
     margin-top: 0;
