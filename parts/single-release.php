@@ -33,7 +33,9 @@
 			<ol class="tracklist">
 				<?php foreach($tracklist as $i => $track) { ?>
 					<li>
-						<a class="audio-preview" href="<?php echo $track['listen_url']; ?>"></a>
+						<?php if($track['listen_url']) { ?>
+							<a class="audio-preview" href="<?php echo $track['listen_url']; ?>"></a>
+						<?php } ?>
 						<span class="number"><?php echo $i + 1; ?></span>
 						<span class="title">
 							<?php echo htmlentities($track['title']);
