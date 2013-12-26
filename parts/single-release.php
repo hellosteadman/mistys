@@ -25,11 +25,14 @@
 			</div>
 		</header>
 		
-		<main>
-			<?php the_content(); ?>
-		</main>
+		<?php global $post;
+		if($post->post_content) { ?>
+			<main>
+				<?php the_content(); ?>
+			</main>
+		<?php }
 		
-		<?php if($tracklist = skt_get_field('tracklist')) { ?>
+		if($tracklist = skt_get_field('tracklist')) { ?>
 			<ol class="tracklist">
 				<?php foreach($tracklist as $i => $track) { ?>
 					<li>
