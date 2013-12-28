@@ -23,15 +23,15 @@ jQuery(document).ready(
 		if($('body').hasClass('home')) {
 			var skylineTop = $('#skyline').position().top;
 			var windowHeight = $(window).height();
-
+			
 			$(document).on('scroll',
 				function() {
 					var y = $(document).scrollTop();
-
+					
 					$('#skyline').css('top',
 						skylineTop - y * 0.75
 					);
-
+					
 					if(y > windowHeight - 250) {
 						$('#nav-wrapper').addClass('static');
 					} else {
@@ -39,7 +39,7 @@ jQuery(document).ready(
 					}
 				}
 			);
-
+			
 			$('#intro').on('ended',
 				function() {
 					$('#intro').animate(
@@ -50,7 +50,7 @@ jQuery(document).ready(
 					);
 				}
 			);
-
+			
 			$('#releases .carousel').imagesLoaded(
 				function() {
 					$('#releases .carousel').owlCarousel(
@@ -63,6 +63,52 @@ jQuery(document).ready(
 					);
 				}
 			);
+		} else if($('body').hasClass('page-template-page-bio-php')) {
+			$(document).on('scroll',
+				function() {
+					var nHeight = parseInt($('#nav-wrapper').outerHeight());
+					var cTop = parseInt($('body').scrollTop()) + nHeight;
+					var cBottom = $('body').outerHeight() - cTop;
+					
+					$('.para').each(
+						function() {
+							var p = $(this);
+							var pTop = parseInt(p.offset().top);
+							var pHeight = parseInt(p.outerHeight());
+							var pBottom = $(window).height() - pTop;
+							var diff = 0;
+							var total = 0;
+							var opacity = 0;
+							var offset = 0;
+							var down = false;
+							
+							if(cTop == pTop) {
+								p.find('p').css('opacity', 1);
+								return;
+							}
+							
+							if(cTop < pTop) {
+								diff = cTop - pTop;
+								total = pTop;
+								down = true;
+							} else if(cTop > pTop) {
+								diff = pTop + pHeight - cTop;
+								total = pHeight;
+							}
+							
+							offset = diff / total;
+							if(down) {
+								offset = 1 + offset;
+							}
+							
+							opacity = Math.max(0, Math.min(1, offset));
+							p.find('p').css('opacity', opacity);
+						}
+					);
+				}
+			);
+			
+			$(document).trigger('scroll');
 		}
 		
 		$('a img.attachment-thumbnail').each(

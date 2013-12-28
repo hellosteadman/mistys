@@ -46,7 +46,7 @@
 		
 		global $post;
 		if($post->post_content) { ?>
-			<main>
+			<main class="clear">
 				<?php the_content(); ?>
 			</main>
 		<?php } ?>
