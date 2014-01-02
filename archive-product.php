@@ -5,30 +5,35 @@
 					<div class="two-thirds">
 						<header class="tab-container">
 							<ul class="tabs">
-								<?php $types = get_terms('release_type');
+								<?php $types = get_terms('product_type');
+								$first = true;
 								foreach($types as $i => $type) { ?>
-									<li<?php if($i == 0) { ?> class="active"<?php } ?>>
+									<li<?php if($first) { ?> class="active"<?php } ?>>
 										<a class="btn" href="#<?php echo $type->slug; ?>"><?php echo $type->name; ?></a>
 									</li>
-								<?php } ?>
+								<?php $first = false;
+								} ?>
 							</ul>
 							
-							<h1>Releases</h1>
+							<h1>Merchandise</h1>
 						</header>
 						
-						<?php global $content_width; $content_width = 604;
+						<?php global $content_width;
+						$content_width = 604;
+						$first = true;
 						
 						foreach($types as $i => $type) { ?>
-							<div class="tab<?php if($i == 0) { echo ' active'; } ?>" id="<?php echo $type->slug; ?>">
-								<?php skt_query('release',
+							<div class="tab<?php if($first) { echo ' active'; } ?>" id="<?php echo $type->slug; ?>">
+								<?php skt_query('product',
 									array(
-										'release_type' => $type->slug,
+										'product_type' => $type->slug,
 										'posts_per_page' => -1
 									)
 								);
 								
-								get_template_part('parts/loop', 'release');
-								wp_reset_query(); ?>
+								get_template_part('parts/loop', 'product');
+								wp_reset_query();
+								$first = false; ?>
 							</div>
 						<?php } ?>
 					</div>

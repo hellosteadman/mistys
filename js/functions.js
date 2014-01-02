@@ -70,6 +70,10 @@ jQuery(document).ready(
 					var cTop = parseInt($('body').scrollTop()) + nHeight;
 					var cBottom = $('body').outerHeight() - cTop;
 					
+					if($(window).width() < 639) {
+						return;
+					}
+					
 					$('.para').each(
 						function() {
 							var p = $(this);

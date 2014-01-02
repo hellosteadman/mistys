@@ -85,3 +85,10 @@ function mistys_timesince($ts = null) {
 	
 	return date('F Y', $ts);
 }
+
+function mistys_get_venue_address($venue) {
+	$context = $GLOBALS['skt_fundaments'];
+	if($taxonomy = $context->find_taxonomy('gig_venue')) {
+		return $taxonomy->get_field($venue->term_id, 'address');
+	}
+}

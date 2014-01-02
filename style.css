@@ -703,7 +703,8 @@ h1.post-title {
   line-height: 155%;
   margin-bottom: 1em;
 }
-.type-release header .btn {
+.type-release header .btn,
+.type-product header .btn {
   display: none;
 }
 .error404 h1,
@@ -764,6 +765,7 @@ h1.post-title {
 .single .post header h1,
 .single .type-gallery header h1,
 .single .type-release header h1,
+.single .type-product header h1,
 .single .type-video header h1 {
   font-size: 1.5em;
   line-height: 100%;
@@ -816,246 +818,6 @@ header.tab-container .tabs {
   right: 0;
   bottom: 0;
 }
-.page-template-page-bio-php h1 {
-  margin-bottom: 1em;
-}
-.page-template-page-bio-php article .para {
-  margin: 0;
-  padding: 20px;
-  z-index: 1000;
-  position: relative;
-}
-.page-template-page-bio-php article .para p {
-  width: 980px;
-  font-size: 1.25em;
-}
-.page-template-page-bio-php article .para p strong {
-  font-weight: normal;
-  font-size: 1.5em;
-  white-space: nowrap;
-}
-.page-template-page-bio-php article .para.para-1 {
-  background: #ffffff url('images/bio/para-1.jpg') bottom repeat-x;
-  color: #000;
-  text-shadow: none;
-  padding-bottom: 145px;
-}
-.page-template-page-bio-php article .para.para-2 {
-  background: #000000 url('images/bio/para-2.jpg') center no-repeat;
-  background-size: cover;
-  color: #fff;
-  height: 230px;
-  padding-top: 50px;
-}
-.page-template-page-bio-php article .para.para-2 p {
-  width: 490px;
-}
-.page-template-page-bio-php article .para.para-3 {
-  background: url('images/bio/para-3.png') center no-repeat;
-  background-size: cover;
-  color: #fff;
-  height: 369px;
-  margin-top: -36px;
-  padding: 56px 0 20px 0;
-}
-.page-template-page-bio-php article .para.para-3 p {
-  width: 590px;
-  margin-bottom: 1em;
-}
-.page-template-page-bio-php article .para.para-4 {
-  background: #fff;
-}
-.page-template-page-bio-php article .para.para-4 p {
-  color: #999;
-}
-.page-template-page-bio-php article .para.para-4 p strong {
-  color: #666;
-  clear: both;
-  display: block;
-  font-size: 3em;
-  margin-top: 0.25em;
-}
-.page-template-page-bio-php article .para.para-5 {
-  background: url('images/bio/para-5.jpg') center no-repeat;
-  background-size: cover;
-  color: #fff;
-  height: 80px;
-  padding-top: 50px;
-}
-.page-template-page-bio-php article .para.para-6 {
-  color: #fff;
-  background: #c30500 url('images/bio/para-6.png') center 20px no-repeat;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 150px;
-}
-.page-template-page-bio-php article .para.para-6 p {
-  width: 200px;
-  margin: 0 auto 0 auto;
-  line-height: 175%;
-}
-.page-template-page-bio-php article .para.para-6 strong {
-  display: block;
-  clear: both;
-  white-space: normal;
-}
-.page-template-page-bio-php article .para.para-7 {
-  background: url('images/bio/para-7.png') repeat-x bottom;
-  padding: 120px 20px 100px 20px;
-  margin-top: -80px;
-  margin-bottom: -80px;
-  height: 130px;
-  z-index: 2000;
-}
-.page-template-page-bio-php article .para.para-7 p {
-  color: #C30500;
-  padding-left: 250px;
-  width: 730px;
-  text-shadow: none;
-}
-.page-template-page-bio-php article .para.para-8 {
-  background: #222;
-  text-shadow: none;
-  z-index: 1000;
-  text-align: right;
-}
-.page-template-page-bio-php article .para.para-9 {
-  background: url('images/bio/para-9.jpg') repeat-x bottom;
-  background-size: cover;
-  height: 220px;
-  position: relative;
-}
-.page-template-page-bio-php article .para.para-9 p {
-  color: #705B33;
-  width: 700px;
-  position: absolute;
-  bottom: 20px;
-}
-.page-template-page-bio-php article .para.para-9 a {
-  color: #2D3A25;
-  font-weight: bold;
-  text-decoration: none;
-}
-.page-template-page-bio-php article .para.para-9 a:hover {
-  text-decoration: underline;
-}
-.page-template-page-bio-php article .para.para-10 {
-  background: url('images/bio/para-10.jpg') repeat-x bottom;
-  background-size: cover;
-  height: 120px;
-  padding: 70px 0;
-  color: #444;
-  text-shadow: none;
-}
-.page-template-page-bio-php article .para.para-10 p {
-  width: 580px;
-  padding-left: 300px;
-}
-.page-template-page-bio-php article .para.para-11 {
-  background: url('images/bio/para-11.jpg') repeat-x bottom;
-  background-size: cover;
-  height: 310px;
-  text-shadow: #000 2px 2px 5px;
-  color: #fff;
-}
-.page-template-page-bio-php article .para.para-11 p {
-  width: 320px;
-  margin-left: 0;
-}
-.page-template-page-bio-php article .para.para-12 {
-  background: url('images/bio/para-12.jpg') repeat-x bottom;
-  background-size: cover;
-  height: 260px;
-  padding-top: 70px;
-}
-.page-template-page-bio-php article .para.para-12 p {
-  width: 760px;
-  margin-left: 200px;
-}
-.page-template-page-bio-php article .para.para-13 {
-  background: #fdff00 url('images/bio/para-13.jpg') repeat-x;
-  color: red;
-  padding-top: 68px;
-  padding-bottom: 68px;
-  height: auto;
-  text-transform: uppercase;
-  text-align: center;
-}
-.page-template-page-bio-php article .para.para-13 strong {
-  font-size: 1em;
-}
-.page-template-page-bio-php article .para.para-13 p {
-  margin: 0 auto;
-}
-.page-template-page-bio-php article .para.para-14,
-.page-template-page-bio-php article .para.para-15,
-.page-template-page-bio-php article .para.para-16 {
-  background: #fff;
-  text-shadow: none;
-  color: #000;
-  width: 33.3%;
-  float: left;
-  padding: 20px 0;
-  height: 104px;
-  z-index: 1000;
-  text-align: center;
-  text-transform: uppercase;
-}
-.page-template-page-bio-php article .para.para-14 .container,
-.page-template-page-bio-php article .para.para-15 .container,
-.page-template-page-bio-php article .para.para-16 .container {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-.page-template-page-bio-php article .para.para-14 a,
-.page-template-page-bio-php article .para.para-15 a,
-.page-template-page-bio-php article .para.para-16 a {
-  color: #EE1C24;
-  text-decoration: none;
-}
-.page-template-page-bio-php article .para.para-14 a:hover,
-.page-template-page-bio-php article .para.para-15 a:hover,
-.page-template-page-bio-php article .para.para-16 a:hover {
-  text-decoration: underline;
-}
-.page-template-page-bio-php article .para.para-14 p,
-.page-template-page-bio-php article .para.para-15 p,
-.page-template-page-bio-php article .para.para-16 p {
-  width: 100%;
-}
-.page-template-page-bio-php article .para.para-14 strong,
-.page-template-page-bio-php article .para.para-15 strong,
-.page-template-page-bio-php article .para.para-16 strong {
-  white-space: normal;
-}
-.page-template-page-bio-php article .para.para-16 {
-  width: 33.4%;
-  background: #F01B16;
-  color: rgba(255, 255, 255, 0.75);
-  font-family: 'Alegreya', serif;
-  text-transform: none;
-}
-.page-template-page-bio-php article .para.para-16 a {
-  color: #fff;
-}
-.page-template-page-bio-php article .para.para-17 {
-  background: #000000 url('images/bio/para-17.jpg') no-repeat;
-  background-size: cover;
-  height: 110px;
-  clear: both;
-}
-.page-template-page-bio-php article .para.para-18 {
-  background: #000000 url('images/bio/para-18.jpg') no-repeat;
-  background-size: cover;
-  height: 230px;
-  text-align: center;
-  padding-top: 100px;
-}
-.page-template-page-bio-php article .para.para-18 p {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px 0;
-}
 footer {
   clear: both;
   font-size: 0.75em;
@@ -1099,7 +861,8 @@ footer .menu ul li a:before {
   .loop .post header.has-thumbnail,
   .loop .type-gallery header.has-thumbnail,
   .loop .release header.has-thumbnail,
-  .loop .type-video header.has-thumbnail {
+  .loop .type-video header.has-thumbnail,
+  .loop .type-product header.has-thumbnail {
     width: 86px;
     float: left;
     padding: 0 6px 6px 0;
@@ -1108,24 +871,28 @@ footer .menu ul li a:before {
   .loop .post header.has-thumbnail h2,
   .loop .type-gallery header.has-thumbnail h2,
   .loop .release header.has-thumbnail h2,
-  .loop .type-video header.has-thumbnail h2 {
+  .loop .type-video header.has-thumbnail h2,
+  .loop .type-product header.has-thumbnail h2 {
     display: none;
   }
-  .loop .release main {
+  .loop .release main,
+  .loop .product main {
     display: none;
   }
   .type-page header.has-featured-image,
   .single .post header.has-featured-image,
   .single .type-gallery header.has-featured-image,
   .single .type-release header.has-featured-image,
-  .single .type-video header.has-featured-image {
+  .single .type-video header.has-featured-image,
+  .single .type-product header.has-featured-image {
     background: transparent !important;
   }
   .type-page main,
   .single .post main,
   .single .type-gallery main,
   .single .type-release main,
-  .single .type-video main {
+  .single .type-video main,
+  .single .type-product main {
     margin-top: 1em;
   }
   .loop main {
@@ -1361,31 +1128,39 @@ footer .menu ul li a:before {
     left: -122px;
   }
   .type-release header .btn,
-  .type-gig header .btn {
+  .type-gig header .btn,
+  .type-product header .btn {
     float: right;
     display: block;
     text-transform: uppercase;
     font-size: 0.5em;
   }
   .type-release header.has-thumbnail img.thumbnail,
-  .type-gig header.has-thumbnail img.thumbnail {
+  .type-gig header.has-thumbnail img.thumbnail,
+  .type-product header.has-thumbnail img.thumbnail {
     width: 10%;
     float: left;
     margin-right: 1%;
     margin-bottom: 10px;
   }
   .type-release header.has-thumbnail h2,
-  .type-gig header.has-thumbnail h2 {
+  .type-gig header.has-thumbnail h2,
+  .type-product header.has-thumbnail h2 {
     float: left;
     width: 89%;
   }
-  .loop .type-release header .btn {
+  .type-product header .btn {
+    font-size: 0.75em;
+  }
+  .loop .type-release header .btn,
+  .loop .type-product header .btn {
     font-size: 0.75em;
   }
   .loop .post,
   .loop .type-gallery,
   .loop .release,
-  .loop .type-video {
+  .loop .type-video,
+  .loop .type-product {
     background: rgba(0, 0, 0, 0.5);
     margin: 20px 0 20px -20px;
     border-radius: 10px;
@@ -1395,7 +1170,8 @@ footer .menu ul li a:before {
   .loop .post header,
   .loop .type-gallery header,
   .loop .release header,
-  .loop .type-video header {
+  .loop .type-video header,
+  .loop .type-product header {
     padding: 20px 20px 10px 20px;
     background: rgba(0, 0, 0, 0.5);
     width: auto;
@@ -1405,13 +1181,15 @@ footer .menu ul li a:before {
   .loop .post header h2,
   .loop .type-gallery header h2,
   .loop .release header h2,
-  .loop .type-video header h2 {
+  .loop .type-video header h2,
+  .loop .type-product header h2 {
     display: block;
   }
   .loop .post main,
   .loop .type-gallery main,
   .loop .release main,
-  .loop .type-video main {
+  .loop .type-video main,
+  .loop .type-product main {
     padding: 10px 20px 20px 20px;
     display: block;
   }
@@ -1433,14 +1211,16 @@ footer .menu ul li a:before {
   .single .post,
   .single .type-gallery,
   .single .type-release,
-  .single .type-video {
+  .single .type-video,
+  .single .type-product {
     margin: -18px 0 20px -20px;
   }
   .type-page header,
   .single .post header,
   .single .type-gallery header,
   .single .type-release header,
-  .single .type-video header {
+  .single .type-video header,
+  .single .type-product header {
     background: rgba(255, 255, 255, 0.1);
     position: relative;
     padding: 20px;
@@ -1449,7 +1229,8 @@ footer .menu ul li a:before {
   .single .post header.has-featured-image,
   .single .type-gallery header.has-featured-image,
   .single .type-release header.has-featured-image,
-  .single .type-video header.has-featured-image {
+  .single .type-video header.has-featured-image,
+  .single .type-product header.has-featured-image {
     background: transparent;
     padding: 0;
     height: 362px;
@@ -1458,7 +1239,8 @@ footer .menu ul li a:before {
   .single .post header.has-featured-image .inner,
   .single .type-gallery header.has-featured-image .inner,
   .single .type-release header.has-featured-image .inner,
-  .single .type-video header.has-featured-image .inner {
+  .single .type-video header.has-featured-image .inner,
+  .single .type-product header.has-featured-image .inner {
     height: 362px;
     position: relative;
     background: url('images/featured-image.png') left bottom no-repeat;
@@ -1467,7 +1249,8 @@ footer .menu ul li a:before {
   .single .post header.has-featured-image .inner h1,
   .single .type-gallery header.has-featured-image .inner h1,
   .single .type-release header.has-featured-image .inner h1,
-  .single .type-video header.has-featured-image .inner h1 {
+  .single .type-video header.has-featured-image .inner h1,
+  .single .type-product header.has-featured-image .inner h1 {
     position: absolute;
     bottom: 10px;
     padding-bottom: 0;
@@ -1478,14 +1261,16 @@ footer .menu ul li a:before {
   .single .post header.has-featured-image .inner h1 small,
   .single .type-gallery header.has-featured-image .inner h1 small,
   .single .type-release header.has-featured-image .inner h1 small,
-  .single .type-video header.has-featured-image .inner h1 small {
+  .single .type-video header.has-featured-image .inner h1 small,
+  .single .type-product header.has-featured-image .inner h1 small {
     margin-bottom: 0;
   }
   .type-page main,
   .single .post main,
   .single .type-gallery main,
   .single .type-release main,
-  .single .type-video main {
+  .single .type-video main,
+  .single .type-product main {
     padding: 10px 20px 20px 20px;
     background: rgba(0, 0, 0, 0.5);
     font-size: 1.25em;
@@ -1521,6 +1306,246 @@ footer .menu ul li a:before {
   }
   body.single-attachment .attachment-medium {
     box-shadow: 0 0 50px #000;
+  }
+  .page-template-page-bio-php h1 {
+    margin-bottom: 1em;
+  }
+  .page-template-page-bio-php article .para {
+    margin: 0;
+    padding: 20px;
+    z-index: 1000;
+    position: relative;
+  }
+  .page-template-page-bio-php article .para p {
+    width: 980px;
+    font-size: 1.25em;
+  }
+  .page-template-page-bio-php article .para p strong {
+    font-weight: normal;
+    font-size: 1.5em;
+    white-space: nowrap;
+  }
+  .page-template-page-bio-php article .para.para-1 {
+    background: #ffffff url('images/bio/para-1.jpg') bottom repeat-x;
+    color: #000;
+    text-shadow: none;
+    padding-bottom: 145px;
+  }
+  .page-template-page-bio-php article .para.para-2 {
+    background: #000000 url('images/bio/para-2.jpg') center no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 230px;
+    padding-top: 50px;
+  }
+  .page-template-page-bio-php article .para.para-2 p {
+    width: 490px;
+  }
+  .page-template-page-bio-php article .para.para-3 {
+    background: url('images/bio/para-3.png') center no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 369px;
+    margin-top: -36px;
+    padding: 56px 0 20px 0;
+  }
+  .page-template-page-bio-php article .para.para-3 p {
+    width: 590px;
+    margin-bottom: 1em;
+  }
+  .page-template-page-bio-php article .para.para-4 {
+    background: #fff;
+  }
+  .page-template-page-bio-php article .para.para-4 p {
+    color: #999;
+  }
+  .page-template-page-bio-php article .para.para-4 p strong {
+    color: #666;
+    clear: both;
+    display: block;
+    font-size: 3em;
+    margin-top: 0.25em;
+  }
+  .page-template-page-bio-php article .para.para-5 {
+    background: url('images/bio/para-5.jpg') center no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 80px;
+    padding-top: 50px;
+  }
+  .page-template-page-bio-php article .para.para-6 {
+    color: #fff;
+    background: #c30500 url('images/bio/para-6.png') center 20px no-repeat;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 150px;
+  }
+  .page-template-page-bio-php article .para.para-6 p {
+    width: 200px;
+    margin: 0 auto 0 auto;
+    line-height: 175%;
+  }
+  .page-template-page-bio-php article .para.para-6 strong {
+    display: block;
+    clear: both;
+    white-space: normal;
+  }
+  .page-template-page-bio-php article .para.para-7 {
+    background: url('images/bio/para-7.png') repeat-x bottom;
+    padding: 120px 20px 100px 20px;
+    margin-top: -80px;
+    margin-bottom: -80px;
+    height: 130px;
+    z-index: 2000;
+  }
+  .page-template-page-bio-php article .para.para-7 p {
+    color: #C30500;
+    padding-left: 250px;
+    width: 730px;
+    text-shadow: none;
+  }
+  .page-template-page-bio-php article .para.para-8 {
+    background: #222;
+    text-shadow: none;
+    z-index: 1000;
+    text-align: right;
+  }
+  .page-template-page-bio-php article .para.para-9 {
+    background: url('images/bio/para-9.jpg') repeat-x bottom;
+    background-size: cover;
+    height: 220px;
+    position: relative;
+  }
+  .page-template-page-bio-php article .para.para-9 p {
+    color: #705B33;
+    width: 700px;
+    position: absolute;
+    bottom: 20px;
+  }
+  .page-template-page-bio-php article .para.para-9 a {
+    color: #2D3A25;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .page-template-page-bio-php article .para.para-9 a:hover {
+    text-decoration: underline;
+  }
+  .page-template-page-bio-php article .para.para-10 {
+    background: url('images/bio/para-10.jpg') repeat-x bottom;
+    background-size: cover;
+    height: 120px;
+    padding: 70px 0;
+    color: #444;
+    text-shadow: none;
+  }
+  .page-template-page-bio-php article .para.para-10 p {
+    width: 580px;
+    padding-left: 300px;
+  }
+  .page-template-page-bio-php article .para.para-11 {
+    background: url('images/bio/para-11.jpg') repeat-x bottom;
+    background-size: cover;
+    height: 310px;
+    text-shadow: #000 2px 2px 5px;
+    color: #fff;
+  }
+  .page-template-page-bio-php article .para.para-11 p {
+    width: 320px;
+    margin-left: 0;
+  }
+  .page-template-page-bio-php article .para.para-12 {
+    background: url('images/bio/para-12.jpg') repeat-x bottom;
+    background-size: cover;
+    height: 260px;
+    padding-top: 70px;
+  }
+  .page-template-page-bio-php article .para.para-12 p {
+    width: 760px;
+    margin-left: 200px;
+  }
+  .page-template-page-bio-php article .para.para-13 {
+    background: #fdff00 url('images/bio/para-13.jpg') repeat-x;
+    color: red;
+    padding-top: 68px;
+    padding-bottom: 68px;
+    height: auto;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .page-template-page-bio-php article .para.para-13 strong {
+    font-size: 1em;
+  }
+  .page-template-page-bio-php article .para.para-13 p {
+    margin: 0 auto;
+  }
+  .page-template-page-bio-php article .para.para-14,
+  .page-template-page-bio-php article .para.para-15,
+  .page-template-page-bio-php article .para.para-16 {
+    background: #fff;
+    text-shadow: none;
+    color: #000;
+    width: 33.3%;
+    float: left;
+    padding: 20px 0;
+    height: 104px;
+    z-index: 1000;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .page-template-page-bio-php article .para.para-14 .container,
+  .page-template-page-bio-php article .para.para-15 .container,
+  .page-template-page-bio-php article .para.para-16 .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .page-template-page-bio-php article .para.para-14 a,
+  .page-template-page-bio-php article .para.para-15 a,
+  .page-template-page-bio-php article .para.para-16 a {
+    color: #EE1C24;
+    text-decoration: none;
+  }
+  .page-template-page-bio-php article .para.para-14 a:hover,
+  .page-template-page-bio-php article .para.para-15 a:hover,
+  .page-template-page-bio-php article .para.para-16 a:hover {
+    text-decoration: underline;
+  }
+  .page-template-page-bio-php article .para.para-14 p,
+  .page-template-page-bio-php article .para.para-15 p,
+  .page-template-page-bio-php article .para.para-16 p {
+    width: 100%;
+  }
+  .page-template-page-bio-php article .para.para-14 strong,
+  .page-template-page-bio-php article .para.para-15 strong,
+  .page-template-page-bio-php article .para.para-16 strong {
+    white-space: normal;
+  }
+  .page-template-page-bio-php article .para.para-16 {
+    width: 33.4%;
+    background: #F01B16;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Alegreya', serif;
+    text-transform: none;
+  }
+  .page-template-page-bio-php article .para.para-16 a {
+    color: #fff;
+  }
+  .page-template-page-bio-php article .para.para-17 {
+    background: #000000 url('images/bio/para-17.jpg') no-repeat;
+    background-size: cover;
+    height: 110px;
+    clear: both;
+  }
+  .page-template-page-bio-php article .para.para-18 {
+    background: #000000 url('images/bio/para-18.jpg') no-repeat;
+    background-size: cover;
+    height: 230px;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .page-template-page-bio-php article .para.para-18 p {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
   }
   footer {
     padding-top: 50px;
@@ -1562,6 +1587,14 @@ footer .menu ul li a:before {
   .type-release header.has-thumbnail h2,
   .type-gig header.has-thumbnail h2 {
     width: 488px;
+  }
+  .type-gig img.map {
+    margin: 0 -20px -20px -20px;
+    max-width: 644px;
+    display: block;
+  }
+  .type-gig img.map.mobile-only {
+    display: none;
   }
   #welcome h1 {
     font-size: 4.57em;

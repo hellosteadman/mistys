@@ -6,13 +6,19 @@ get_header(); ?>
 		<section id="main-wrapper">
 			<div class="container">
 				<h1 class="post-title">
-					<a href="<?php the_permalink(); ?>">They go the long way round</a>
+					<a href="<?php the_permalink(); ?>">We go the long way round</a>
 				</h1>
 			</div>
 			
-			<article>
-				<?php the_post();
-				$lines = 0;
+			<article class="mobile-only">
+				<?php the_post(); ?>
+				<div class="container">
+					<?php the_content(); ?>
+				</div>
+			</article>
+			
+			<article class="exclude-mobile">
+				<?php $lines = 0;
 				$line = array();
 				
 				foreach(explode("\n", get_the_content() . "\n") as $l) {
