@@ -10,13 +10,6 @@
 					<?php } ?>
 					
 					<h2 class="post-title">
-						<?php $qty = skt_get_field('quantity');
-						if($qty && intVal($qty) > 0) { ?>
-							<a class="btn" href="#">Buy now</a>
-						<?php } else { ?>
-							<a class="btn" href="#">Sold out</a>
-						<?php } ?>
-						
 						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 						<small>
 							&pound;<?php skt_the_field('price'); ?><br />

@@ -147,7 +147,11 @@ a.thumbnail:hover { border: 1px solid #999; }
 }
 
 .type-release, .type-product {
-	header .btn { display: none; }
+	header {
+		.btn, input[type="submit"] {
+			display: none;
+		}
+	}
 }
 
 .error404 {
@@ -179,9 +183,9 @@ a.thumbnail:hover { border: 1px solid #999; }
 	}
 }
 
-.btn {
+.btn, input[type="submit"] {
 	background-color: #000; padding: 5px 10px; color: #fff; text-decoration: none;
-	font-family: 'Oxygen', Helvetica, Arial, sans-serif;
+	font-family: 'Oxygen', Helvetica, Arial, sans-serif; border-width: 0; cursor: pointer;
 	&:hover { background-color: #00BFFF; }
 }
 

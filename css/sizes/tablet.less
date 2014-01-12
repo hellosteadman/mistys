@@ -118,7 +118,7 @@ h1 { font-size: 1.5em; line-height: 125%; }
 
 .type-release, .type-gig, .type-product {
 	header {
-		.btn {
+		.btn, input[type="submit"] {
 			float: right; display: block; text-transform: uppercase;
 			font-size: 0.5em;
 		}
@@ -134,11 +134,17 @@ h1 { font-size: 1.5em; line-height: 125%; }
 }
 
 .type-product {
-	header .btn { font-size: 0.75em; }
+	header .btn, header input[type="submit"] { font-size: 0.75em; }
+	header form {
+		float: right;
+		input[type="submit"] {
+			
+		}
+	}
 }
 
 .loop .type-release, .loop .type-product {
-	header .btn { font-size: 0.75em; }
+	header .btn, header input[type="submit"] { font-size: 0.75em; }
 }
 
 .loop .post, .loop .type-gallery, .loop .release, .loop .type-video, .loop .type-product {
@@ -158,7 +164,9 @@ h1 { font-size: 1.5em; line-height: 125%; }
 	border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;
 	h2 strong { color: #fff; }
 	
-	.loop & header .btn { font-size: 0.75em; }
+	.loop & header {
+		.btn, input[type="submit"] { font-size: 0.75em; }
+	}
 }
 
 .type-page, .single .post, .single .type-gallery, .single .type-release, .single .type-video, .single .type-product {
@@ -205,6 +213,22 @@ header.tab-container {
 	
 	body.home & {
 		margin-top: 0; padding: 0; background: transparent;
+	}
+	
+	.shopping_cart {
+		img { display: none; }
+		h2 {
+			font-size: 2.28em; font-family: 'Alegreya', serif; font-weight: bold;
+			text-transform: uppercase;
+		}
+		
+		a { color: #fff; }
+		td {
+			padding: 5px; vertical-align: top;
+			line-height: 20px; text-align: left;
+			&:first-child { padding-left: 0; }
+			&:last-child { padding-right: 0; }
+		}
 	}
 }
 

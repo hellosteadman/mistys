@@ -9,9 +9,9 @@
 			
 			<h2 class="post-title">
 				<?php $qty = skt_get_field('quantity');
-				if($qty && intVal($qty) > 0) { ?>
-					<a class="btn" href="#">Buy now</a>
-				<?php } else { ?>
+				if($qty && intVal($qty) > 0) {
+					echo do_shortcode('[wp_cart_button name="' . get_the_title() . '" price="' . skt_get_field('price') . '"]');
+				} else { ?>
 					<a class="btn" href="#">Sold out</a>
 				<?php } ?>
 				

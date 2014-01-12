@@ -1,5 +1,9 @@
 <aside class="sidebar">
 	<article class="exclude-mobile">
+		<?php echo do_shortcode('[show_wp_shopping_cart]'); ?>
+	</article>
+	
+	<article class="exclude-mobile">
 		<?php get_template_part('parts/gallery'); ?>
 	</article>
 	

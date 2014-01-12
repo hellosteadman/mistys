@@ -704,7 +704,9 @@ h1.post-title {
   margin-bottom: 1em;
 }
 .type-release header .btn,
-.type-product header .btn {
+.type-product header .btn,
+.type-release header input[type="submit"],
+.type-product header input[type="submit"] {
   display: none;
 }
 .error404 h1,
@@ -738,14 +740,18 @@ h1.post-title {
 .tracklist li a.audio-preview.playing:hover {
   background-color: #000;
 }
-.btn {
+.btn,
+input[type="submit"] {
   background-color: #000;
   padding: 5px 10px;
   color: #fff;
   text-decoration: none;
   font-family: 'Oxygen', Helvetica, Arial, sans-serif;
+  border-width: 0;
+  cursor: pointer;
 }
-.btn:hover {
+.btn:hover,
+input[type="submit"]:hover {
   background-color: #00BFFF;
 }
 .tabs {
@@ -908,7 +914,8 @@ footer .menu ul li a:before {
     padding: 10px;
     margin: 10px -10px 0 -10px;
   }
-  .type-gig header .btn {
+  .type-gig header .btn,
+  .type-gig header input[type="submit"] {
     font-size: 0.5em;
     float: right;
   }
@@ -1129,7 +1136,10 @@ footer .menu ul li a:before {
   }
   .type-release header .btn,
   .type-gig header .btn,
-  .type-product header .btn {
+  .type-product header .btn,
+  .type-release header input[type="submit"],
+  .type-gig header input[type="submit"],
+  .type-product header input[type="submit"] {
     float: right;
     display: block;
     text-transform: uppercase;
@@ -1149,11 +1159,17 @@ footer .menu ul li a:before {
     float: left;
     width: 89%;
   }
-  .type-product header .btn {
+  .type-product header .btn,
+  .type-product header input[type="submit"] {
     font-size: 0.75em;
   }
+  .type-product header form {
+    float: right;
+  }
   .loop .type-release header .btn,
-  .loop .type-product header .btn {
+  .loop .type-product header .btn,
+  .loop .type-release header input[type="submit"],
+  .loop .type-product header input[type="submit"] {
     font-size: 0.75em;
   }
   .loop .post,
@@ -1204,7 +1220,8 @@ footer .menu ul li a:before {
   .type-gig h2 strong {
     color: #fff;
   }
-  .loop .type-gig header .btn {
+  .loop .type-gig header .btn,
+  .loop .type-gig header input[type="submit"] {
     font-size: 0.75em;
   }
   .type-page,
@@ -1300,6 +1317,30 @@ footer .menu ul li a:before {
     margin-top: 0;
     padding: 0;
     background: transparent;
+  }
+  .sidebar .shopping_cart img {
+    display: none;
+  }
+  .sidebar .shopping_cart h2 {
+    font-size: 2.28em;
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .sidebar .shopping_cart a {
+    color: #fff;
+  }
+  .sidebar .shopping_cart td {
+    padding: 5px;
+    vertical-align: top;
+    line-height: 20px;
+    text-align: left;
+  }
+  .sidebar .shopping_cart td:first-child {
+    padding-left: 0;
+  }
+  .sidebar .shopping_cart td:last-child {
+    padding-right: 0;
   }
   body.single-attachment {
     background-image: url('images/background.gallery.png');
