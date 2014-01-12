@@ -14,6 +14,7 @@
 
 								<main>
 									<?php the_content(); ?>
+									<div class="clear"></div>
 								</main>
 							</article>
 						<?php } ?>

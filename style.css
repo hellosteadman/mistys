@@ -824,6 +824,22 @@ header.tab-container .tabs {
   right: 0;
   bottom: 0;
 }
+.wpcf7-form label {
+  display: block;
+}
+.wpcf7-form .wpcf7-form-control {
+  clear: both;
+  border-width: 0;
+  width: 98%;
+  padding: 1%;
+  font-family: 'Oxygen', Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5em;
+  display: block;
+}
+.wpcf7-form .wpcf7-form-control:focus {
+  outline: none;
+}
 footer {
   clear: both;
   font-size: 0.75em;
@@ -1636,6 +1652,22 @@ footer .menu ul li a:before {
   }
   .type-gig img.map.mobile-only {
     display: none;
+  }
+  .wpcf7-form p {
+    width: 100%;
+    float: left;
+    clear: both;
+  }
+  .wpcf7-form label {
+    line-height: 35px;
+    float: left;
+    width: 100%;
+  }
+  .wpcf7-form .wpcf7-form-control {
+    float: right;
+    clear: none;
+    padding: 5px;
+    width: 60%;
   }
   #welcome h1 {
     font-size: 4.57em;
