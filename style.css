@@ -1480,7 +1480,7 @@ footer .menu ul li a:before {
     bottom: 20px;
   }
   .page-template-page-bio-php article .para.para-9 a {
-    color: #2D3A25;
+    color: rgba(0, 0, 0, 0.75);
     font-weight: bold;
     text-decoration: none;
   }
@@ -1492,7 +1492,7 @@ footer .menu ul li a:before {
     background-size: cover;
     height: 120px;
     padding: 70px 0;
-    color: rgba(0, 0, 0, 0.75);
+    color: #444;
     text-shadow: none;
   }
   .page-template-page-bio-php article .para.para-10 p {
