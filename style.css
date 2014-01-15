@@ -1474,13 +1474,13 @@ footer .menu ul li a:before {
     position: relative;
   }
   .page-template-page-bio-php article .para.para-9 p {
-    color: #705B33;
+    color: rgba(0, 0, 0, 0.75);
     width: 700px;
     position: absolute;
     bottom: 20px;
   }
   .page-template-page-bio-php article .para.para-9 a {
-    color: rgba(0, 0, 0, 0.75);
+    color: #2D3A25;
     font-weight: bold;
     text-decoration: none;
   }
