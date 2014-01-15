@@ -1492,7 +1492,7 @@ footer .menu ul li a:before {
     background-size: cover;
     height: 120px;
     padding: 70px 0;
-    color: #444;
+    color: rgba(0, 0, 0, 0.75);
     text-shadow: none;
   }
   .page-template-page-bio-php article .para.para-10 p {
