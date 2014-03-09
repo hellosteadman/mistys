@@ -824,6 +824,14 @@ input[type="submit"]:hover {
 .tab.active {
   display: block;
 }
+.single .type-release main h3 {
+  font-weight: bold;
+}
+.single .type-release main old {
+  list-style-type: lower-alpha;
+  margin: 0.5em 0;
+  padding: 0 0 0 2em;
+}
 .single .type-release ol.tracklist li {
   background: rgba(0, 0, 0, 0.5);
   margin-top: 1px;
