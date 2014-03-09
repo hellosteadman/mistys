@@ -758,8 +758,48 @@ input[type="submit"]:hover {
   display: inline-block;
   margin-right: 28px;
 }
+.tabs .dropdown {
+  position: absolute;
+  top: 1.45em;
+  z-index: 300;
+  width: 100%;
+  display: block;
+  background: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-transform: scaleY(0);
+  -webkit-transform-origin: top;
+  -webkit-transition: -webkit-transform 0.26s;
+}
+.tabs .dropdown li {
+  display: block;
+  position: static;
+  padding: 10px;
+  float: left;
+  clear: both;
+  font-size: 0.9em;
+}
+.tabs .dropdown li a {
+  color: #333;
+  text-decoration: none;
+}
+.tabs .dropdown li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
 .tabs li {
   display: inline-block;
+  position: relative;
+}
+.tabs li a.dropdown-toggle:after {
+  content: "\25BC";
+}
+.tabs li a.dropdown-toggle:hover:after {
+  content: "\25B2";
+}
+.tabs li:hover .dropdown {
+  -webkit-transform: scaleY(1);
 }
 .tabs .active .btn {
   background-color: #00BFFF;

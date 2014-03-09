@@ -25,7 +25,11 @@
 			</div>
 		</header>
 		
-		<?php if($tracklist = skt_get_field('tracklist')) { ?>
+		<?php if($bcid = skt_get_field('bandcamp_id')) { ?>
+			<iframe style="border: 0; width: 100%; height: 42px;" src="http://bandcamp.com/EmbeddedPlayer/album=<?php echo $bcid; ?>/size=small/bgcol=000000/linkcol=0687f5/transparent=true/" seamless></iframe>
+		<?php }
+		
+		if($tracklist = skt_get_field('tracklist')) { ?>
 			<ol class="tracklist">
 				<?php foreach($tracklist as $i => $track) { ?>
 					<li>

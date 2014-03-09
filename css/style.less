@@ -190,8 +190,40 @@ a.thumbnail:hover { border: 1px solid #999; }
 }
 
 .tabs {
+	.dropdown {
+		position: absolute; top: 1.45em; z-index: 300; width: 100%;
+		display: block; background: rgba(255, 255, 255, 0.9); margin: 0; padding: 0;
+		overflow: hidden; -webkit-transform: scaleY(0); -webkit-transform-origin: top;
+		-webkit-transition: -webkit-transform .26s;
+		
+		li {
+			display: block; position: static; padding: 10px;
+			float: left; clear: both; font-size: 0.9em;
+			
+			a {
+				color: #333; text-decoration: none;
+				&:hover { color: #000; text-decoration: underline; }
+			}
+		}
+	}
+	
 	display: inline-block; margin-right: 28px;
-	li { display: inline-block; }
+	li {
+		display: inline-block; position: relative;
+		a.dropdown-toggle {
+			&:after {
+				content: "\25BC";
+			}
+			
+			&:hover {
+				&:after {
+					content: "\25B2";
+				}
+			}
+		}
+		
+		&:hover .dropdown { -webkit-transform: scaleY(1); }
+	}
 	
 	.active .btn {
 		background-color: #00BFFF;
