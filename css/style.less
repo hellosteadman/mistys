@@ -193,8 +193,10 @@ a.thumbnail:hover { border: 1px solid #999; }
 	.dropdown {
 		position: absolute; top: 1.45em; z-index: 300; width: 100%;
 		display: block; background: rgba(255, 255, 255, 0.9); margin: 0; padding: 0;
-		overflow: hidden; -webkit-transform: scaleY(0); -webkit-transform-origin: top;
-		-webkit-transition: -webkit-transform .26s;
+		-webkit-transform: scaleY(0); -webkit-transform-origin: top; -webkit-transition: -webkit-transform .26s;
+		-moz-transform: scaleY(0); -moz-transform-origin: top; -moz-transition: -moz-transform .26s;
+		-ms-transform: scaleY(0); -ms-transform-origin: top; -ms-transition: -ms-transform .26s;
+		transform: scaleY(0); transform-origin: top; transition: transform .26s;
 		
 		li {
 			display: block; position: static; padding: 10px;
@@ -222,7 +224,12 @@ a.thumbnail:hover { border: 1px solid #999; }
 			}
 		}
 		
-		&:hover .dropdown { -webkit-transform: scaleY(1); }
+		&:hover .dropdown {
+			-webkit-transform: scaleY(1);
+			-moz-transform: scaleY(1);
+			-ms-transform: scaleY(1);
+			transform: scaleY(1);
+		}
 	}
 	
 	.active .btn {
