@@ -27,5 +27,5 @@
 		<?php } ?>
 	</section>
 <?php } else { ?>
-	<p>Sorry, no releases can be found.</p>
+	<p>We don&rsquo;t have any merch yet, but new T-shirt designs are coming soon!</p>
 <?php }
