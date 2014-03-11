@@ -70,7 +70,7 @@ jQuery(document).ready(
 					var cTop = parseInt($('body').scrollTop()) + nHeight;
 					var cBottom = $('body').outerHeight() - cTop;
 					
-					if ($.browser.msie) {
+					if (!$.browser.webkit) {
 						return;
 					}
 					
