@@ -13,7 +13,6 @@
 		<link href="http://fonts.googleapis.com/css?family=Alegreya:400,900" rel="stylesheet" />
 		<link href="http://fonts.googleapis.com/css?family=Oxygen:400,300,700&amp;subset=latin,latin-ext" rel="stylesheet" />
 		<link href="<?php echo get_stylesheet_uri(); ?>" rel="stylesheet" />
-		
 		<?php wp_head(); ?>
 	</head>
 	

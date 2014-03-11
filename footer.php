@@ -13,5 +13,14 @@
 		
 		<div id="jquery_jplayer"></div>
 		<?php wp_footer(); ?>
+		<script>
+			if (jQuery.browser.msie && parseInt(jQuery.browser.version, 10) < 9) {
+				if(document.location != '/ie9/') {
+					document.location = '/ie9/';
+				} else {
+					alert(document.location);
+				}
+			}
+		</script>
 	</body>
 </html>

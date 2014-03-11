@@ -70,6 +70,10 @@ jQuery(document).ready(
 					var cTop = parseInt($('body').scrollTop()) + nHeight;
 					var cBottom = $('body').outerHeight() - cTop;
 					
+					if ($.browser.msie && parseInt($.browser.version, 10) < 10) {
+						return;
+					}
+					
 					if($(window).width() < 639) {
 						return;
 					}
